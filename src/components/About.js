@@ -11,9 +11,16 @@ function About() {
           <div className="col-md-6">
             <h2 className="main-title about-h2">ABOUT</h2>
             <p className="main-p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              quam purus, ullamcorper id risus eu, consectetur consectetur
-              purus. Etiam sagittis in eros ac sollicitudin.
+            Uplift is a growth ecosystem for startups and SMEs, offering on-demand fractional business experts, flexible co-working spaces, curated investor networking, and market research. Our platform provides cost-effective, scalable solutions to help businesses grow, collaborate, and seize new opportunities. Uplift is committed to simplifying scaling and empowering entrepreneurs at every stage.
+
+
+
+
+
+
+
+
+
             </p>
           </div>
         </div>

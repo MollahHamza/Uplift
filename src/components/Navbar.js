@@ -1,20 +1,18 @@
 import { Link } from "react-scroll";
 
 function Navbar() {
-  document.addEventListener("scroll", function (e) {
+  document.addEventListener("scroll", function () {
     if (window.screen.width < 768 && window.scrollY > 690) {
       const gotop = document.querySelector(".gotop");
       gotop.classList.add("display");
 
       const nav = document.querySelector(".navbar");
-
       nav.classList.add("navopened");
     } else if (window.screen.width > 768 && window.scrollY > 220) {
       const gotop = document.querySelector(".gotop");
       gotop.classList.add("display");
 
       const nav = document.querySelector(".navbar");
-
       nav.classList.add("navopened");
     } else {
       const nav = document.querySelector(".navbar");
@@ -23,9 +21,9 @@ function Navbar() {
       nav.classList.remove("navopened");
     }
   });
+
   function openBar() {
     const bar = document.querySelector(".bar");
-
     bar.classList.toggle("opened");
   }
 
@@ -33,7 +31,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="row">
-          <h1 className="logo">
+          <h1 className="logo" style={{ fontSize: "36px" }}>
             <Link
               spy={true}
               smooth={true}
@@ -41,7 +39,7 @@ function Navbar() {
               to="headerbg"
               style={{ cursor: "pointer" }}
             >
-              DarkLeas
+              Uplift
             </Link>
           </h1>
           <ul className="bar">
@@ -104,4 +102,5 @@ function Navbar() {
     </nav>
   );
 }
+
 export default Navbar;
